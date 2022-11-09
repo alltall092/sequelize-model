@@ -3,7 +3,7 @@ const initModels = require("../models/initModels");
 // los modelos donde vamos a plantar información
 const Users = require("../models/users.models");
 const Address = require("../models/addresses.models");
-const Tasks = require("../models/ tasks.models");
+const Tasks = require("../models/tasks.models");
 const Categories = require("../models/categories.models");
 
 // arreglos con la información que se va a plantar

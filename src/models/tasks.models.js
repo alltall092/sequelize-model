@@ -29,6 +29,11 @@ const Tasks = db.define("tasks", {
     },
     field: "user_id",
   },
+
+},
+  {
+    timestamps: false,
+  
 });
 
 module.exports = Tasks;

@@ -4,12 +4,12 @@
 const { Sequelize } = require("sequelize");
 
 const db = new Sequelize({
-  database: "todo",
-  username: "postgres",
-  host: "localhost",
-  port: "5432",
-  password: "root",
-  dialect: "postgres",
+  database:  process.env.DB_NAME ||"todoapi",
+  username: process.env.DB_USER ||"julio",
+  host: process.env.DB_HOST||"localhost",
+ // port: "5432",
+  password: process.env.DB_PASSWORD ||"120786",
+  dialect: "mysql",
 });
 
 module.exports = db;
